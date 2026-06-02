@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>蠊金术师：微观荒野</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-label="蠊金术师微观荒野纪录片画面">
+        <div class="hero-art" aria-hidden="true">
+          <img src="./assets/american-cockroach.jpg" alt="" />
+          <div class="lens-vignette"></div>
+          <div class="focus-box"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="system-line">微距镜头 / 夜行巢域 / Ω-03</p>
+          <h1>蠊金术师：微观荒野</h1>
+          <p>跟随一只美洲大蠊穿过潮湿墙缝、废墟管道和厨房边缘。这里没有英雄，只有光线、气味、捕食者和下一口食物。</p>
+        </div>
+      </section>
+
+      <section class="terminal" aria-label="游戏终端">
+        <header class="status-panel">
+          <div>
+            <span>夜行回合</span>
+            <strong id="days">1</strong>
+          </div>
+          <div>
+            <span>食物</span>
+            <strong id="gold">0 mg</strong>
+          </div>
+          <div>
+            <span>隐蔽点</span>
+            <strong id="scrap">0</strong>
+          </div>
+        </header>
+
+        <section class="vitals" aria-label="生存状态">
+          <label>
+            <span>体况 <b id="hp-text">100/100</b></span>
+            <meter id="hp" min="0" max="100" value="100"></meter>
+          </label>
+          <label>
+            <span>水分与能量 <b id="energy-text">100/100</b></span>
+            <meter id="energy" min="0" max="100" value="100"></meter>
+          </label>
+        </section>
+
+        <section class="modules" aria-label="改造模块">
+          <div>
+            <span>外骨骼</span>
+            <strong id="armor">Lv.1</strong>
+          </div>
+          <div>
+            <span>触角感知</span>
+            <strong id="antenna">Lv.1</strong>
+          </div>
+          <div>
+            <span>啃食效率</span>
+            <strong id="mandible">Lv.1</strong>
+          </div>
+        </section>
+
+        <section class="log-panel" aria-label="探索日志">
+          <div id="log" class="log"></div>
+        </section>
+
+        <section class="actions" aria-label="行动按钮">
+          <button id="explore" class="primary" type="button">进入夜巡</button>
+          <button id="repair" type="button">退入缝隙</button>
+          <button id="upgrade-armor" type="button">蜕壳硬化</button>
+          <button id="upgrade-antenna" type="button">训练触角</button>
+          <button id="upgrade-mandible" type="button">强化口器</button>
+          <button id="restart" class="danger" type="button">重新观察</button>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js?v=roach-20260601"></script>
+  </body>
+</html>
